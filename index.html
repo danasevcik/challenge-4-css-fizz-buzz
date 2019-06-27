@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./css/reset.css?v=1.0">
   <link rel="stylesheet" href="./css/base.css?v=1.0">
   <link rel="stylesheet" href="./css/app.css?v=1.0">
+  <script src="index.js"></script>
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -25,7 +26,7 @@
                 <th>Deficit</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="table-body">
             <tr>
                 <td>1</td>
                 <td>0</td>
@@ -829,27 +830,6 @@
         </tbody>
     </table>
   </div>
-  <script>
-/**
-  hashCode = function(s){
-    return s.split("").reduce(function(a,b){a=((a<<5)-a)+b.charCodeAt(0);return a&a},0);              
-  }
 
-  var str = '';
-  var tableBody = document.querySelector('tbody');
-  for (var i = 1; i < 101; i++) {
-      str += '<tr>';
-      str += '  <td>' + i + '</td>';
-      str += '  <td>' + (parseInt(Math.random() * (i + 1), 10) * 1000).toString(16) + '</td>';
-      str += '  <td>' + (parseFloat(Math.random() * (i + 1), 2) * 100).toFixed(2) + '</td>';
-      str += '  <td>' + (parseInt(Math.random() * (i + 1), 10)) + '</td>';
-      str += '  <td>' + (parseInt(Math.random() * (i + 3), 10) * 10000).toString(16) + '</td>';
-      str += '  <td>' + (parseInt(Math.random() * (i + 3), 10) * -1000) + '</td>';
-      str += '</tr>';
-  }
-  tableBody.innerHTML = str;
-*/
-  </script>
 </body>
 </html>
-
